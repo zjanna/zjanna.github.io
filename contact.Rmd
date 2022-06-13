@@ -6,7 +6,7 @@ pagetitle: "Joanna Zyprych-Walczak"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-<img src="images/up.png" style="width:25%; margin-right: 50px" align="right">
+<img src="images/up1.jpg" style="width:25%; margin-right: 50px" align="right">
 
 **Poznan University of the Life Sciences**<br>
 9500 Euclid Ave. CA-60<br>
