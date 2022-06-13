@@ -8,7 +8,7 @@ pagetitle: "Joanna Zyprych-Walczak"
 
 <img src="images/up.png" style="width:25%; margin-right: 50px" align="right">
 
-**Cleveland Clinic**<br>
+**Poznan University of the Life Sciences**<br>
 9500 Euclid Ave. CA-60<br>
 Cleveland, OH 44195<br>
 216-387-8625<br>
