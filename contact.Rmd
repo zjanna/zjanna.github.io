@@ -1,0 +1,18 @@
+---
+title: " "
+pagetitle: "Joanna Zyprych-Walczak"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
+
+<img src="images/CC_CancerInstitute_c.jpg" style="width:25%; margin-right: 50px" align="right">
+
+**Uniwersytet Przyrodniczy w Poznaniu**<br>
+ul. Wojska Polskiego 28<br>
+Poznań, 61-238<br>
+61-848-71-30<br>
+[zjanna@up.poznan.pl](zjanna@up.poznan.pl)<br>
+
+Or connect with me on [GitHub](http://github.com/zjanna),  [Linkedin](https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/)
+

@@ -1,0 +1,28 @@
+name: "Joanna Zyprych-Walczak"
+output_dir: "."
+navbar:
+  title: "Joanna Zyprych-Walczak"
+  left:
+    - text: "Research"
+      href: research.html
+    - text: "Speaking"
+      href: talks.html
+    - text: "Programming"
+      href: software.html
+    - text: "Tutorials"
+      href: teaching.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: ai-google-scholar ai-lg
+      href: https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&hl=pl
+    - icon: ai-cv ai-lg
+      href: ./files/cv_Joanna_2019
+    - icon: fab fa-github fa-lg
+      href: http://github.com/zjanna
+    - icon: fab fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'

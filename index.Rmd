@@ -1,0 +1,13 @@
+---
+title: " "
+pagetitle: "Joanna Zyprych-Walczak"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
+
+<img src="images/emily_2.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
+
+I am an adjunct professor at the Department of Mathematical and Statistical Methods at Poznań University of Life Sciences [Department of Mathematical and Statistical Methods](http://merlin.up.poznan.pl/kmmis2/).
+
+
