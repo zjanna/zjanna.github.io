@@ -1,7 +1,7 @@
-name: "Joanna Zyprych-Walczak"
+name: "Emily C. Zabor"
 output_dir: "."
 navbar:
-  title: "Joanna Zyprych-Walczak"
+  title: "Emily C. Zabor"
   left:
     - text: "Research"
       href: research.html
@@ -15,13 +15,15 @@ navbar:
     - icon: fa-envelope fa-lg
       href: contact.html
     - icon: ai-google-scholar ai-lg
-      href: https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&hl=pl
+      href: https://scholar.google.com/citations?user=tLbQTZMAAAAJ&hl=en
     - icon: ai-cv ai-lg
-      href: ./files/cv_Joanna_2019
+      href: ./files/Zabor_Emily_CV.pdf
     - icon: fab fa-github fa-lg
-      href: http://github.com/zjanna
+      href: http://github.com/zabore
+    - icon: fab fa-twitter fa-lg
+      href: https://twitter.com/zabormetrics
     - icon: fab fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/
+      href: https://www.linkedin.com/in/emily-zabor-59b902b7/
 output:
   html_document:
     theme: paper

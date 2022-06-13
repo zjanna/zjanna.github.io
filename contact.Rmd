@@ -1,6 +1,6 @@
 ---
 title: " "
-pagetitle: "Joanna Zyprych-Walczak"
+pagetitle: "Emily C. Zabor"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -8,11 +8,11 @@ pagetitle: "Joanna Zyprych-Walczak"
 
 <img src="images/CC_CancerInstitute_c.jpg" style="width:25%; margin-right: 50px" align="right">
 
-**Uniwersytet Przyrodniczy w Poznaniu**<br>
-ul. Wojska Polskiego 28<br>
-Poznań, 61-238<br>
-61-848-71-30<br>
-[zjanna@up.poznan.pl](zjanna@up.poznan.pl)<br>
+**Cleveland Clinic**<br>
+9500 Euclid Ave. CA-60<br>
+Cleveland, OH 44195<br>
+216-387-8625<br>
+[zabore2@ccf.org](zabore2@ccf.org)<br>
 
-Or connect with me on [GitHub](http://github.com/zjanna),  [Linkedin](https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/)
+Or connect with me on [GitHub](https://github.com/zabore), [Twitter](https://twitter.com/zabormetrics), or [Linkedin](https://www.linkedin.com/in/emily-zabor-59b902b7/)
 

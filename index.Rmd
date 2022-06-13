@@ -1,6 +1,6 @@
 ---
 title: " "
-pagetitle: "Joanna Zyprych-Walczak"
+pagetitle: "Emily C. Zabor"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -8,6 +8,13 @@ pagetitle: "Joanna Zyprych-Walczak"
 
 <img src="images/emily_2.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
-I am an adjunct professor at the Department of Mathematical and Statistical Methods at Poznań University of Life Sciences [Department of Mathematical and Statistical Methods](http://merlin.up.poznan.pl/kmmis2/).
+I am an Assistant Staff Biostatistician at the Cleveland Clinic in the [Department of Quantitative Health Sciences](https://www.lerner.ccf.org/qhs/zabor/), with a joint appointment in the Taussig Cancer Institute. I also hold an academic appointment as Assistant Professor of Medicine at the Cleveland Clinic Lerner College of Medicine of Case Western Reserve University. 
+
+My research interests are in clinical trial design and statistical methods for observational studies, with applications to oncology.
+
+I earned my MS in biostatistics in 2010 from The University of Minnesota and my DrPH in biostatistics in 2019 from Columbia University.  
+
+I am an avid R enthusiast and an active member of [R Ladies](https://rladies.org/). 
+
 
 
