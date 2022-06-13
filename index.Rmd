@@ -6,7 +6,7 @@ pagetitle: "Emily C. Zabor"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-<img src="images/emily_2.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
+<img src="images/asia.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
 I am an Assistant Staff Biostatistician at the Cleveland Clinic in the [Department of Quantitative Health Sciences](https://www.lerner.ccf.org/qhs/zabor/), with a joint appointment in the Taussig Cancer Institute. I also hold an academic appointment as Assistant Professor of Medicine at the Cleveland Clinic Lerner College of Medicine of Case Western Reserve University. 
 
