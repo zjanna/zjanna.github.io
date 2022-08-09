@@ -6,7 +6,7 @@ pagetitle: "Joanna Zyprych-Walczak"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-### <a name="articles"></a>journal articles
+
 
 ## Selected publications
 
