@@ -6,19 +6,25 @@ pagetitle: "Joanna Zyprych-Walczak"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
+### <a name="articles"></a>journal articles
 
-### Selected publications
+## Selected publications
 
+#### 2021
 
-Kolanowski T., Wargocka-Matuszewska W., Zimna A., Cheda Ł., **Zyprych-Walczak J.**, Rugowska A., Drabik M., Fiedorowicz M., Krajewski S., Steczek Ł., Kozanecki C., Rogulski Z., Rozwadowska N., Kurpisz M.},(2021). Multiparametric Evaluation of Post-MI Small Animal Models Using Metabolic ([18F]FDG) and Perfusion-Based (SYN1) Heart Viability Tracers.Int. J. Mol. Sci. 2021, 22(22). 
+Kolanowski T., Wargocka-Matuszewska W., Zimna A., Cheda Ł., **Zyprych-Walczak J.**, Rugowska A., Drabik M., Fiedorowicz M., Krajewski S., Steczek Ł., Kozanecki C., Rogulski Z., Rozwadowska N., Kurpisz M.,(2021). Multiparametric Evaluation of Post-MI Small Animal Models Using Metabolic ([18F]FDG) and Perfusion-Based (SYN1) Heart Viability Tracers.Int. J. Mol. Sci. 2021, 22(22). [![PubMed](icons16/pubmed-icon.png)](https://pubmed.ncbi.nlm.nih.gov/34830471/)
 
 Lütge A., **Zyprych-Walczak J.**, Brykczynska Kunzmann U., Crowell L.H., Calini  D., Malhotra D., Soneson  Ch., Robinson M.D.}, (2021). CellMixS: quantifying and visualizing batch effects in single-cell RNA-seq data. Life Sci Alliance 23;4(6)
 
 Różańska-Zawieja J., Winnicki S., **Zyprych-Walczak J.**, Szabelska-Beręsewicz A., Siatkowski I., Nowak W., Stefańska B., Kujawiak R., Sobek Z., (2021). The effect of feeding management and culling of cows on the lactation curves and milk production of primiparous dairy cows. Animals.11 (iss. 7), art. no. 1959.
 
+#### 2020
+
 Weigt, D., Kiel A., Siatkowski I., **Zyprych-Walczak J.**, Tomkowiak A., Kwiatek M., (2020). Comparison of the Androgenic Response of Spring and Winter Wheat (Triticum aestivum L.). Plants 9, 49.
 
 Szenajch J., Szabelska-Beręsewicz A., Świercz A., **Zyprych-Walczak J.**, Siatkowski I., Góralski M., Synowiec A., Handschuh L., (2020). Transcriptome Remodeling in Gradual Development of Inverse Resistance between Paclitaxel and Cisplatin in Ovarian Cancer Cells. International Journal of Molecular Sciences 21(23), 9218.
+
+#### 2019
 
 Piekarska-Boniecka H., Rzanska-Wieczorek M., Siatkowski I., **Zyprych-Walczak J.**, (2019). Controlling the abun­dance of the rose tortrix moth [Archips rosana (L.)] by parasitoids in apple orchards in Wielkopolska, Poland. Plant Pro­tect. Sci., 55: 265–272.
 
@@ -26,6 +32,9 @@ Piekarska-Boniecka H., Rzanska-Wieczorek M., Siatkowski I., **Zyprych-Walczak J.
 Weigt, D., Niemann, J., Siatkowski, I., **Zyprych-Walczak, J.**, Olejnik, P., Kurasiak-Popowska, D.}, (2019). Effect of Zearalenone and Hormone Regulators on Microspore Embryogenesis in Anther Culture of Wheat. Plants 8, 11, 487.
 
 Różańska-Zawieja J., Szabelska-Beręsewicz A., Sobek Z., **Zyprych-Walczak J.**, Siatkowski I., (2019). Assessment of heritability coefficient variation for various breeds of cattle. Journal of Animal & Plant Sciences 39(1), 6351-6358.
+
+
+#### 2018
 
 Siatkowski, I., **Zyprych-Walczak, J.**, (2018). R w analizie statystycznej dla przyrodników. Wydawnictwo Uniwersytetu Przyrodniczego w Poznaniu, Poznań, Poland. ISBN 978-83-7160-899-5, ss.121.
 
@@ -38,40 +47,63 @@ Obrępalska-Stęplowska A., Zmienko A., Wrzesińska B., Goralski M., Figlerowicz
 
 Leśniewska A., **Zyprych-Walczak J.**, Szabelska-Beręsewicz A., Okoniewski M. J., (2018). Genes sharing the protein family domain decrease the performance of classification with RNA-seq genomic signatures. iology Direct, 13 (1), 3, doi: 10.1186/s13062-018-0205-x.
 
+
+#### 2017
+
 Piekarska-Boniecka H.,  Siatkowski I., **Zyprych-Walczak J.**, Trzciński P., Rzańska-Wieczorek M., (2017). The phenology of occurrence of dominant predatory Syrphidae (Diptera) species in apple orchards and on their edges. Acta Sci. Pol. Hortorum Cultus, 16(1), 23–38.
 
 Beręsewicz M., Alvarez A., Biecek P., Dyderski M. K., Kosiński M., Nowosad J., Rotter K., Szabelska-Beręsewicz A., Szymkowiak M., Wawrowski Ł., **Zyprych-Walczak J.**, (2017). Conference Report: European R Users Meeting 2016. The R Journal, 9 (1), 501-504.
 
 Różańska-Zawieja J., Szabelska-Beręsewicz A., Sobek Z., Nienartowicz-Zdrojewska A., **Zyprych-Walczak J.**, Siatkowski I., (2017). Wpływ wielkości grup ojcowskich i stad na optymalną ocenę współczynnika odziedziczalności długości ciąży u bydła. Roczniki Naukowe Polskiego Towarzystwa Zootechnicznego 13(1), 9–17.
 
+#### 2016
 
 Szenajch J., Góralski M., Świercz A., Szabelska A., **Zyprych-Walczak J.**, Synowiec A., Siatkowski I., Handschuh L., (2016). Zmiany w ekspresji szlaków sygnałowych uczestniczące w wykształcaniu nabytej w obecności erytropoetyny oporności na ci-splatynę i paklitaksel w komórkach ludzkiego raka jajnika. {\em BioMed Nowotwory, vol. 66, suppl. 2, p. 50.
 
+#### 2015
+
 **Zyprych-Walczak J.**, Szabelska A., Handschuh L., Gorczak K., Klamecka K., Figlerowicz M., Siatkowski I., (2015). The impact of normalization methods on RNA-seq data analysis. {\em BioMed Research International}, Article ID 621690; doi: 10.1155/2015/621690.
 
+
+#### 2014
+
 Gorczak K., Klamecka K., Szabelska A., **Zyprych-Walczak J.**, Siatkowski I., (2014). Graphical methods for differential analysis of RNA-Seq data. Colloquium Biometricum} 44, 167-181.
+
+
+#### 2013
 
 Uszczynska B., **Zyprych-Walczak J.**, Handschuh L., Szabelska A., Kazmierczak M., Woronowicz W., Kozlowski P., Sikorski M. M., Komarnicki M., Siatkowski I., Figlerowicz M., (2013). Analysis of boutique arrays: A universal method for the selection of the optimal data normalization procedure. International Journal of Molecular Medicine}, 32 (3), 668-684. [IF = 1.957]
 
 Tomkowiak A., Weigt D., Broda Z., Mikolajczyk S., Szabelska A., **Zyprych J.**, Siatkowski I.,} (2013). Analysis of relationship between genetic and phenotypic similarity of alfaalfa mutants inflorescences. {\em Nauka Przyr. Technol.} 7 (3) \#34. 
 
-Tomkowiak A., Weigt D., Szabelska A., Zyprych J., Broda Z., Siatkowski I.} (2012).
+#### 2012
+
+Tomkowiak A., Weigt D., Szabelska A., **Zyprych J.**, Broda Z., Siatkowski I. (2012).
 Analiza zróżnicowania genetycznego odmian I klonów koniczyny białej (Trifolium repens L.) z użyciem markerów RAPD
-{\em Nauka Przyr. Technol. t. 6, z. 4, art. 79} \\ \\
+Nauka Przyr. Technol. t. 6, z. 4, art. 79
 
 
-\noindent {\sc Szabelska A., Zyprych-Walczak J., Siatkowski I.,} (2012). Application of linear mixed models in the selection of genes from microarray experiments with repeated measurements.  {\em Colloquium Biometricum} 42, 103-109.\\ \\
-\noindent {\sc Okoniewski M. J., Lesniewska A., Szabelska A., Zyprych-Walczak J., Ryan M., Wachtel M., Morzy T., Schaeffer B., Schlapbach R.} (2011). Preferred analysis methods for single genomic regions in RNA sequencing revealed by processing the shape of coverage. {\em Nucleic Acids Research}, doi: 10.1093/nar/gkr1249. [IF = 8.055]\\ \\
-\noindent {\sc Schmidt M., L. Handschuh,  Zyprych J., Szabelska A., Olejnik-Schmidt A., Siatkowski I., Figlerowicz M.,} (2011). Impact of DNA microarray data transformation on gene expression analysis - comparison of two normalization method. {\em Acta Biochimica Polonica} 58 (4), 573-580. [IF = 1.234]\\ \\
+Szabelska A., **Zyprych-Walczak J.**, Siatkowski I., (2012). Application of linear mixed models in the selection of genes from microarray experiments with repeated measurements. Colloquium Biometricum} 42, 103-109.
 
-\noindent {\sc Zyprych-Walczak J., Szabelska A., Siatkowski I.} (2011). Application of statistical tests in gene selection problems. {\em Biometrical Letters}, 48 (2), 113-121.\\ \\
+#### 2011
 
-\noindent {\sc  Piekarska-Boniecka H., Siatkowski I., Zyprych J.} (2010). Model for bionomy of privet sawfly (Macrophya punctumalbum L.) (Hymenoptera, Tenthredinidae). {\em Acta Sci. Pol., Hortorum Cultus. - 9 (3), s. 161-166} \\ \\
+Okoniewski M. J., Lesniewska A., Szabelska A., **Zyprych-Walczak J.**, Ryan M., Wachtel M., Morzy T., Schaeffer B., Schlapbach R. (2011). Preferred analysis methods for single genomic regions in RNA sequencing revealed by processing the shape of coverage. Nucleic Acids Research, doi: 10.1093/nar/gkr1249. [IF = 8.055]
 
-\noindent {\sc Piekarska-Boniecka H., Siatkowski I., Zyprych J.} (2010). Comparison of the collecting of the parasitoids belonging to the Pimplinae subfamily (Hymenoptera, Ichneumonidae).
-{\em Pol. Pismo Entomol. -  vol. 79, no. 3, s. 283-290}.
-\noindent {\sc Siatkowski M., Szabelska A., Zyprych J., Weres J., Kujawa S.,} (2010). Growth curve functions in modeling the thin-layer drying of corn. {\em Inzynieria Rolnicza} 6 (124).\\ \\
-\noindent {\sc Thornton A., Szabelska A., Zyprych J. et. al.,} (2010). Modelling and Optimization of Algae Growth. {\em Proceedings of the 72nd European Study Group - Mathematics with Industry}, 54-85.\\ \\  
-\noindent {\sc Siatkowski I., Goszczurna T., Szabelska A., Zyprych J.,} (2010). Coefficients of dissimilarity and similarity with applications. {\em Colloquium Biometricum} 40, p.13-23.\\ \\
-\noindent {\sc Szabelska A., Siatkowski M., Goszczurna T., Zyprych J.,} (2010). Comparison of growth models in R. {\em Nauka Przyroda Technologia} 4 (4) \#50.
+Schmidt M., L. Handschuh,  **Zyprych J.**, Szabelska A., Olejnik-Schmidt A., Siatkowski I., Figlerowicz M., (2011). Impact of DNA microarray data transformation on gene expression analysis - comparison of two normalization method. Acta Biochimica Polonica} 58 (4), 573-580. [IF = 1.234]
+
+**Zyprych-Walczak J.**, Szabelska A., Siatkowski I. (2011). Application of statistical tests in gene selection problems. Biometrical Letters}, 48 (2), 113-121.
+
+#### 2010
+
+Piekarska-Boniecka H., Siatkowski I., **Zyprych J.** (2010). Model for bionomy of privet sawfly (Macrophya punctumalbum L.) (Hymenoptera, Tenthredinidae). Acta Sci. Pol., Hortorum Cultus. - 9 (3), s. 161-166} 
+
+Piekarska-Boniecka H., Siatkowski I., **Zyprych J.** (2010). Comparison of the collecting of the parasitoids belonging to the Pimplinae subfamily (Hymenoptera, Ichneumonidae).Pol. Pismo Entomol. -  vol. 79, no. 3, s. 283-290.
+
+Siatkowski M., Szabelska A., **Zyprych J.**, Weres J., Kujawa S. (2010). Growth curve functions in modeling the thin-layer drying of corn.  Inzynieria Rolnicza 6 (124).
+
+Thornton A., Szabelska A., **Zyprych J.** et. al.(2010). Modelling and Optimization of Algae Growth. Proceedings of the 72nd European Study Group - Mathematics with Industry}, 54-85.
+
+Siatkowski I., Goszczurna T., Szabelska A., **Zyprych J.** (2010). Coefficients of dissimilarity and similarity with applications.  Colloquium Biometricum} 40, p.13-23.
+
+Szabelska A., Siatkowski M., Goszczurna T., **Zyprych J. ** (2010). Comparison of growth models in R. Nauka Przyroda Technologia 4 (4) \#50.
 
