@@ -9,10 +9,10 @@ pagetitle: "Joanna Zyprych-Walczak"
 <img src="images/up1.jpg" style="width:25%; margin-right: 50px" align="right">
 
 **Poznan University of the Life Sciences**<br>
-9500 Euclid Ave. CA-60<br>
-Cleveland, OH 44195<br>
-216-387-8625<br>
-[zabore2@ccf.org](zabore2@ccf.org)<br>
+Wojska Polskiego Street 28<br>
+Poznan, 60-637<br>
++48 61-848-7150<br>
+[joanna.zyprych-walczak@up.poznan.pl](joanna.zyprych-walczak@up.poznan.pl)<br>
 
-Or connect with me on [GitHub](https://github.com/zabore), [Twitter](https://twitter.com/zabormetrics), or [Linkedin](https://www.linkedin.com/in/emily-zabor-59b902b7/)
+Or connect with me on [GitHub](https://github.com/zjanna), or [Linkedin](https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/)
 
