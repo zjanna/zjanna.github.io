@@ -8,7 +8,7 @@ pagetitle: "Joanna Zyprych-Walczak"
 
 <img src="images/up1.jpg" style="width:25%; margin-right: 50px" align="right">
 
-**Poznan University of the Life Sciences**<br>
+**Poznan University of Life Sciences**<br>
 Wojska Polskiego Street 28<br>
 Poznan, 60-637<br>
 +48 61-848-7150<br>
