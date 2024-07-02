@@ -15,7 +15,7 @@ navbar:
     - icon: fa-envelope fa-lg
       href: contact.html
     - icon: ai-google-scholar ai-lg
-      href: https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&hl=pl
+      href: https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&amp;hl=pl
     - icon: ai-cv ai-lg
       href: ./files/CV_Joanna_ZW.pdf
     - icon: fab fa-github fa-lg
