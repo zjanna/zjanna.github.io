@@ -10,7 +10,7 @@ pagetitle: "Joanna Zyprych-Walczak"
 
 I am an adjunct professor at the Department of Mathematical and Statistical Methods at Poznań University of Life Sciences [Department of Mathematical and Statistical Methods](http://merlin.up.poznan.pl/kmmis2/).
 
-In my daily research activities, I focuse mainly on the development and application of various statistical methods to data from microarrays, next-generation sequencing experiments (NGS) and single-cell. I'm interested in a wide range of issues related to biostatistics. 
+In my research activities, I concentrate on the development and application of statistical methods to data from microarrays, next-generation sequencing experiments (NGS) and single-cell. My research interests extend to a wide range of issues related to biostatistics. 
 
 
 
