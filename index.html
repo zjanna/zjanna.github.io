@@ -1,359 +1,610 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pl">
 <head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Joanna Zyprych-Walczak</title>
-
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fafaf8; --bg-soft:#f1f0ec; --card:#ffffff;
+    --ink:#1c1c22; --ink-soft:#55555f; --ink-faint:#8a8a93;
+    --accent:#0d8a6f; --accent-soft:#0d8a6f1a; --accent-ink:#0a6e58;
+    --line:#e6e4dd; --shadow:0 1px 2px rgba(20,20,30,.04),0 8px 30px rgba(20,20,30,.06);
+    --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
   }
-}
-</script>
-
-
-
-
-
-
-<link rel="stylesheet" href="styles.css" type="text/css" />
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  html[data-theme="dark"]{
+    --bg:#0e1117; --bg-soft:#161b22; --card:#161b22;
+    --ink:#e9e8e3; --ink-soft:#a8a8b0; --ink-faint:#6b6b76;
+    --accent:#2dd4bf; --accent-soft:#2dd4bf1f; --accent-ink:#5eead4;
+    --line:#262b33; --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 40px rgba(0,0,0,.35);
   }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;
+    -webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
 
-<!-- tabsets -->
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(14px);
+    background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line);transition:background .4s ease}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:var(--serif);font-weight:600;font-size:1.12rem;letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  .links{display:flex;gap:15px;align-items:center}
+  .links a{font-size:.79rem;color:var(--ink-soft);font-weight:500;position:relative;transition:color .25s;white-space:nowrap}
+  .links a:hover,.links a.active{color:var(--ink)}
+  .links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--accent);transition:width .3s ease}
+  .links a:hover::after,.links a.active::after{width:100%}
+  .theme-btn{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+    width:38px;height:38px;border-radius:11px;display:grid;place-items:center;transition:.25s;font-size:1rem}
+  .theme-btn:hover{color:var(--accent);border-color:var(--accent)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--ink);font-size:1.5rem;cursor:pointer}
 
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+  header{padding:84px 0 70px;position:relative;overflow:hidden}
+  .hero-glow{position:absolute;top:-200px;right:-160px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,var(--accent-soft),transparent 68%);pointer-events:none;filter:blur(8px)}
+  .hero{display:grid;grid-template-columns:1.45fr 1fr;gap:60px;align-items:center;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.74rem;font-weight:600;
+    text-transform:uppercase;letter-spacing:.14em;color:var(--accent-ink);margin-bottom:22px}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.5rem,5.4vw,3.85rem);line-height:1.04;letter-spacing:-.025em;margin-bottom:22px}
+  .lead{font-size:1.08rem;color:var(--ink-soft);max-width:46ch;margin-bottom:14px}
+  .lead strong{color:var(--ink);font-weight:600}
+  .affil{font-size:.95rem;color:var(--ink-faint);margin-bottom:30px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:11px 20px;border-radius:12px;font-size:.88rem;font-weight:600;transition:.25s;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px var(--accent-soft);filter:brightness(1.04)}
+  .btn.ghost{background:var(--card);color:var(--ink)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  .portrait{position:relative;justify-self:center}
+  .portrait img{width:min(330px,72vw);aspect-ratio:1;object-fit:cover;border-radius:26px;box-shadow:var(--shadow);position:relative;z-index:2;background:var(--bg-soft)}
+  .portrait::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:26px;border:1.5px solid var(--accent);opacity:.45;z-index:1}
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
+  section{padding:70px 0;border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:42px;max-width:62ch}
+  .sec-tag{font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--accent-ink);margin-bottom:12px}
+  .sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.5rem);letter-spacing:-.02em;line-height:1.1}
+  .sec-head p{color:var(--ink-soft);margin-top:14px;font-size:1.02rem}
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
+  .focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .fcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow);transition:.3s}
+  .fcard:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .fcard .ic{width:42px;height:42px;border-radius:12px;background:var(--accent-soft);color:var(--accent-ink);display:grid;place-items:center;margin-bottom:16px;font-size:1.25rem}
+  .fcard h3{font-family:var(--serif);font-weight:600;font-size:1.12rem;margin-bottom:8px}
+  .fcard p{font-size:.9rem;color:var(--ink-soft)}
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
+  .year-block{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:22px 0;border-top:1px solid var(--line)}
+  .year-block:first-of-type{border-top:none}
+  .yr{font-family:var(--serif);font-size:1.5rem;color:var(--accent);font-weight:600;position:sticky;top:90px;align-self:start}
+  .items{display:flex;flex-direction:column;gap:16px}
+  .pub{font-size:.93rem;color:var(--ink-soft);padding-left:18px;border-left:2px solid var(--line);transition:border-color .25s,transform .25s}
+  .pub:hover{border-color:var(--accent);transform:translateX(3px)}
+  .pub b{color:var(--ink);font-weight:600}
+  .pub .venue{display:block;margin-top:3px;color:var(--ink-faint);font-size:.84rem;font-style:italic}
+  .pub a.lnk{color:var(--accent-ink);font-weight:600;font-size:.82rem}
+  .pub .if{display:inline-block;font-size:.7rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:1px 8px;border-radius:20px;margin-left:6px;font-style:normal}
+  .pub .kind{display:inline-block;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-ink);background:var(--accent-soft);padding:2px 9px;border-radius:20px;margin-bottom:6px}
+  .pub .date{font-size:.78rem;color:var(--ink-faint);font-weight:500}
+  .more-wrap{text-align:center;margin-top:34px}
+  .more-btn{cursor:pointer;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:11px 26px;border-radius:30px;font-size:.86rem;font-weight:600;font-family:var(--sans);transition:.25s}
+  .more-btn:hover{border-color:var(--accent);color:var(--accent)}
+  .hidden{display:none}
 
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
+  .grants{display:flex;flex-direction:column;gap:16px}
+  .grant{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:var(--shadow);transition:.3s}
+  .grant:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .grant .gid{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.04em;color:var(--accent-ink);background:var(--accent-soft);padding:3px 11px;border-radius:20px;margin-bottom:12px}
+  .grant .gtitle{font-family:var(--serif);font-weight:600;font-size:1.05rem;line-height:1.4;margin-bottom:10px;color:var(--ink)}
+  .grant .gmeta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.84rem;color:var(--ink-soft)}
+  .grant .gmeta span{display:inline-flex;align-items:center;gap:6px}
+  .grant .gmeta b{color:var(--ink);font-weight:600}
 
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .ccard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow)}
+  .ccard h3{font-family:var(--serif);font-size:1.2rem;margin-bottom:18px;font-weight:600}
+  .crow{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:.93rem;color:var(--ink-soft)}
+  .crow .ic{color:var(--accent);font-size:1.05rem;margin-top:1px}
+  .crow a:hover{color:var(--accent)}
+  .social{display:flex;flex-direction:column;gap:12px}
+  .social a{display:flex;align-items:center;gap:13px;padding:13px 16px;border:1px solid var(--line);border-radius:13px;font-weight:500;font-size:.92rem;transition:.25s;background:var(--bg)}
+  .social a:hover{border-color:var(--accent);color:var(--accent);transform:translateX(4px)}
+  .social .ic{font-size:1.15rem}
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
+  footer{border-top:1px solid var(--line);padding:36px 0;text-align:center;color:var(--ink-faint);font-size:.84rem}
 
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
+  /* patents */
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:var(--shadow);transition:.3s;margin-bottom:16px}
+  .pcard:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .pcard .gid{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.04em;color:var(--accent-ink);background:var(--accent-soft);padding:3px 11px;border-radius:20px;margin-bottom:12px}
+  .pcard .gtitle{font-family:var(--serif);font-weight:600;font-size:1.05rem;line-height:1.4;margin-bottom:8px;color:var(--ink)}
+  .pcard p{font-size:.86rem;color:var(--ink-soft)}
+
+  /* timeline (staże) */
+  .timeline{position:relative;padding-left:30px}
+  .timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .tl{position:relative;padding-bottom:28px}
+  .tl:last-child{padding-bottom:0}
+  .tl::before{content:"";position:absolute;left:-30px;top:5px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2.5px solid var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+  .tl .tl-date{font-size:.78rem;font-weight:600;color:var(--accent-ink);letter-spacing:.03em;margin-bottom:5px}
+  .tl h4{font-family:var(--serif);font-size:1.06rem;font-weight:600;margin-bottom:5px;color:var(--ink)}
+  .tl p{font-size:.9rem;color:var(--ink-soft)}
+
+  /* teaching */
+  .tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;box-shadow:var(--shadow);margin-bottom:20px}
+  .tcard h3{font-family:var(--serif);font-size:1.14rem;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+  .tcard h3 .ic{font-size:1.05rem}
+  .tcard>p{font-size:.92rem;color:var(--ink-soft);margin-bottom:6px}
+  .tcard .sub{color:var(--ink-faint);font-size:.84rem;font-style:italic}
+  .course-group{margin-top:16px}
+  .course-group h5{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-ink);font-weight:600;margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-size:.85rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:30px;padding:8px 16px;transition:.25s}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  footer .brand{font-size:1rem;display:block;margin-bottom:8px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:1024px){
+    .hero{grid-template-columns:1fr;gap:40px;text-align:center}
+    .portrait{order:-1}.eyebrow,.cta{justify-content:center}.lead,.affil{margin-left:auto;margin-right:auto}
+    .links{position:fixed;inset:66px 0 auto 0;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);
+      padding:18px 28px;gap:18px;transform:translateY(-160%);transition:transform .35s ease;z-index:40}
+    .links.open{transform:none}
+    .menu-toggle{display:block}
+    .contact-grid{grid-template-columns:1fr}
+    .year-block{grid-template-columns:56px 1fr;gap:14px}
+    .yr{font-size:1.2rem;position:static}
+  }
 </style>
-
-<!-- code folding -->
-
-
-
-
 </head>
-
 <body>
 
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Joanna Zyprych-Walczak</a>
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">Joanna <span>Zyprych-Walczak</span></a>
+    <div class="links" id="links">
+      <a href="#research">Badania</a>
+      <a href="#publications">Publikacje</a>
+      <a href="#projects">Projekty</a>
+      <a href="#patents">Patenty</a>
+      <a href="#talks">Wystąpienia</a>
+      <a href="#visits">Staże</a>
+      <a href="#teaching">Dydaktyka</a>
+      <a href="#org">Organizacja</a>
+      <a href="#contact">Kontakt</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="research.html">Research</a>
-</li>
-<li>
-  <a href="talks.html">Speaking</a>
-</li>
-<li>
-  <a href="software.html">Programming</a>
-</li>
-<li>
-  <a href="teaching.html">Tutorials</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="contact.html">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&amp;hl=pl">
-    <span class="ai ai-google-scholar ai-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="./files/CV_Joanna_ZW.pdf">
-    <span class="ai ai-cv ai-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://github.com/zjanna">
-    <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/">
-    <span class="fab fa-linkedin fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
+    <div style="display:flex;gap:10px">
+      <button class="theme-btn" id="theme" aria-label="Zmień motyw">◐</button>
+      <button class="menu-toggle" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
 
-<div id="header">
+<header id="top">
+  <div class="hero-glow"></div>
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Biostatystyka · Bioinformatyka</span>
+      <h1>dr Joanna<br>Zyprych-Walczak</h1>
+      <p class="lead">Rozwijam i stosuję metody statystyczne do danych z <strong>mikromacierzy</strong>, sekwencjonowania nowej generacji (<strong>NGS</strong>) oraz eksperymentów <strong>single-cell</strong>.</p>
+      <p class="affil">Adiunkt · Katedra Metod Matematycznych i Statystycznych<br>Uniwersytet Przyrodniczy w Poznaniu</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Skontaktuj się →</a>
+        <a class="btn ghost" href="https://zjanna.github.io/files/CV_Joanna_ZW.pdf" target="_blank">Pobierz CV</a>
+        <a class="btn ghost" href="https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&hl=pl" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="https://zjanna.github.io/images/asia.jpg" alt="Joanna Zyprych-Walczak" onerror="this.style.opacity=.15">
+    </div>
+  </div>
+</header>
 
+<section id="research" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Obszary badań</div>
+      <h2>Statystyka w służbie danych biologicznych</h2>
+      <p>Szeroki zakres zagadnień biostatystyki — od metod normalizacji po wizualizację i interpretację wyników dla naukowców z dziedzin przyrodniczych i medycznych.</p>
+    </div>
+    <div class="focus">
+      <div class="fcard"><div class="ic">🧬</div><h3>RNA-seq &amp; NGS</h3><p>Metody normalizacji, analiza ekspresji różnicowej oraz wpływ profili pokrycia i alignerów na selekcję genów.</p></div>
+      <div class="fcard"><div class="ic">🔬</div><h3>Mikromacierze</h3><p>Optymalne procedury przetwarzania danych i porównywanie metod transformacji w analizie ekspresji genów.</p></div>
+      <div class="fcard"><div class="ic">📊</div><h3>Single-cell</h3><p>Kwantyfikacja i wizualizacja efektów wsadowych (batch effects) w danych scRNA-seq.</p></div>
+      <div class="fcard"><div class="ic">📈</div><h3>Modelowanie statystyczne</h3><p>Modele liniowe mieszane, testy statystyczne i metody selekcji genów uwzględniające korelacje.</p></div>
+    </div>
+  </div>
+</section>
 
+<section id="publications" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Dorobek</div>
+      <h2>Publikacje</h2>
+      <p>Pełna, aktualizowana lista cytowań dostępna jest w profilu Google Scholar. Przy wybranych pozycjach podano współczynnik wpływu (IF).</p>
+    </div>
+    <div id="pub-list"></div>
+    <div class="more-wrap"><button class="more-btn" id="pub-more">Pokaż wcześniejsze publikacje</button></div>
+  </div>
+</section>
 
+<section id="projects" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Projekty badawcze</div>
+      <h2>Projekty i granty</h2>
+      <p>Projekty naukowe, w których brałam udział jako wykonawca — finansowane przez NCN oraz NCBiR.</p>
+    </div>
+    <div class="grants" id="grant-list"></div>
+  </div>
+</section>
 
-</div>
+<section id="patents" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Własność intelektualna</div>
+      <h2>Patenty</h2>
+    </div>
+    <div class="pcard">
+      <span class="gid">Patent PL420318 · Urząd Patentowy RP</span>
+      <div class="gtitle">Human Ovarian Cancer Cell Culture Model for Paclitaxel-Induced Inverse Resistance to Paclitaxel and Cisplatin and Use Thereof</div>
+      <p>Zgłoszenie z dnia 27.01.2017.</p>
+    </div>
+    <div class="pcard">
+      <span class="gid">W toku</span>
+      <div class="gtitle">Sposób oceny właściwości immunomodulacyjnych WJ-MSC</div>
+      <p>Aktualna praca nad zgłoszeniem patentowym.</p>
+    </div>
+  </div>
+</section>
 
+<section id="talks" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Konferencje i seminaria</div>
+      <h2>Wystąpienia</h2>
+      <p>Wykłady zaproszone, referaty, postery i warsztaty na konferencjach krajowych oraz międzynarodowych.</p>
+    </div>
+    <div id="talk-list"></div>
+    <div class="more-wrap"><button class="more-btn" id="talk-more">Pokaż wcześniejsze wystąpienia</button></div>
+  </div>
+</section>
 
-<p><link rel="stylesheet" href="styles.css" type="text/css"> <link rel="stylesheet" href="academicicons/css/academicons.min.css"/></p>
-<p><img src="images/asia.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left"></p>
-<p>I am an adjunct professor at the Department of Mathematical and Statistical Methods at Poznań University of Life Sciences <a href="http://merlin.up.poznan.pl/kmmis2/">Department of Mathematical and Statistical Methods</a>.</p>
-<p>In my daily research activities, I focuse mainly on the development and application of various statistical methods to data from microarrays, next-generation sequencing experiments (NGS) and single-cell. I’m interested in a wide range of issues related to biostatistics.</p>
+<section id="visits" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Współpraca międzynarodowa</div>
+      <h2>Staże i wyjazdy zagraniczne</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl">
+        <div class="tl-date">05–06.2019</div>
+        <h4>University of Zurich — Institute of Molecular Life Sciences</h4>
+        <p>Staż naukowy połączony ze współpracą z Prof. Dr. Markiem D. Robinsonem.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">02–04.2011</div>
+        <h4>Functional Genomics Center Zurich</h4>
+        <p>Staż naukowy.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">09.2010</div>
+        <h4>Uniformed Services University of the Health Sciences, Waszyngton (USA)</h4>
+        <p>Department of Preventive Medicine &amp; Biostatistics — staż naukowy.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">06–07.2010</div>
+        <h4>College of William &amp; Mary, Williamsburg, VA (USA)</h4>
+        <p>Department of Mathematics — mentor w programie Research Experience for Undergraduate Students.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">08–09.2008</div>
+        <h4>University of Technology in Graz — Institute of Genomics and Bioinformatics (Linz)</h4>
+        <p>Staż naukowy.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="teaching" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Działalność dydaktyczna</div>
+      <h2>Dydaktyka</h2>
+    </div>
+    <div class="tcard">
+      <h3><span class="ic">🎓</span>Promotorstwo</h3>
+      <p>Promotor pomocniczy w zakończonym przewodzie doktorskim (06.09.2019) — <b>mgr Duong Tran Dinh</b>.</p>
+      <p class="sub">„Zieleń miejska jako środowisko występowania parazytoidów z podrodzin Aphidiinae (Hymenoptera, Braconidae) i Pimplinae (Hymenoptera, Ichneumonidae)".</p>
+    </div>
+    <div class="tcard">
+      <h3><span class="ic">📚</span>Autorskie przedmioty</h3>
+      <div class="course-group">
+        <h5>Socrates-Erasmus</h5>
+        <div class="chips">
+          <span class="chip">Statistics in Environmental Processes</span>
+          <span class="chip">Applied Statistics and Informatics</span>
+          <span class="chip">Introduction to RNA-seq Data Analysis in R</span>
+        </div>
+      </div>
+      <div class="course-group">
+        <h5>Szkoła doktorska</h5>
+        <div class="chips">
+          <span class="chip">Research Tools (Statistics) — j. ang.</span>
+          <span class="chip">Analiza danych RNA-seq w środowisku R (zootechnika i rybactwo, 2022)</span>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <h3><span class="ic">💻</span>Kurs dokształcający</h3>
+      <p>Samodzielne opracowanie i prowadzenie kursu <b>„Wstęp do R"</b> — warsztaty podczas Polskiego Akademickiego Zlotu Użytkowników R (PAZUR), 15–17.10.2014.</p>
+    </div>
+  </div>
+</section>
 
+<section id="org" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Społeczność naukowa</div>
+      <h2>Działalność organizacyjna</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl">
+        <div class="tl-date">2019</div>
+        <h4>Komitet Programowy — XII Sympozjum Polskiego Towarzystwa Bioinformatycznego (PTBI)</h4>
+        <p>Kraków, 19–21.09.2019.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">2017–2018</div>
+        <h4>Prowadzenie seminarium katedralnego</h4>
+        <p>Katedra Metod Matematycznych i Statystycznych, UP w Poznaniu.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">2016</div>
+        <h4>Komitet Organizacyjny — European R Users Meeting (eRum 2016)</h4>
+        <p>Poznań, 12–14.10.2016.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">2014</div>
+        <h4>Komitet Organizacyjny — PAZUR 2014</h4>
+        <p>Polski Akademicki Zlot Użytkowników R, Poznań, 15–17.10.2014.</p>
+      </div>
+      <div class="tl">
+        <div class="tl-date">2012–2016</div>
+        <h4>Współorganizatorka Poznańskich Akademickich Zlotów Użytkowników R (PAZUR)</h4>
+        <p>Cykl spotkań środowiska użytkowników R, Poznań.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="contact" class="reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Kontakt</div>
+      <h2>Porozmawiajmy o danych</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="ccard">
+        <h3>Adres</h3>
+        <div class="crow"><span class="ic">🏛️</span><span>Uniwersytet Przyrodniczy w Poznaniu<br>ul. Wojska Polskiego 28<br>60-637 Poznań</span></div>
+        <div class="crow"><span class="ic">✉️</span><a href="mailto:joanna.zyprych-walczak@up.poznan.pl">joanna.zyprych-walczak@up.poznan.pl</a></div>
+        <div class="crow"><span class="ic">📞</span><span>+48 61 848 71 50</span></div>
+      </div>
+      <div class="ccard">
+        <h3>W sieci</h3>
+        <div class="social">
+          <a href="https://scholar.google.com/citations?user=Jwhd6WQAAAAJ&hl=pl" target="_blank"><span class="ic">🎓</span>Google Scholar</a>
+          <a href="https://github.com/zjanna" target="_blank"><span class="ic">💻</span>GitHub · @zjanna</a>
+          <a href="https://www.linkedin.com/in/joanna-zyprych-walczak-1b527b61/" target="_blank"><span class="ic">in</span>LinkedIn</a>
+          <a href="https://zjanna.github.io/files/CV_Joanna_ZW.pdf" target="_blank"><span class="ic">📄</span>Curriculum Vitae (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
+<footer>
+  <span class="brand">Joanna <span style="color:var(--accent)">Zyprych-Walczak</span></span>
+  © <span id="yr"></span> · Uniwersytet Przyrodniczy w Poznaniu
+</footer>
 
 <script>
+/* ---- PUBLICATIONS ---- */
+const pubs=[
+ {y:2024,recent:true,items:[
+   {a:"Stachowiak M., Nowacka-Woszuk J., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, Krzemińska P., Sosiński O., Nowak T., Świtoński M.",t:"A massive alteration of gene expression in undescended testicles of dogs and the association of KAT6A variants with cryptorchidism.",v:"Proc. Natl. Acad. Sci. USA (PNAS), 121(7), e2312724121",l:"https://doi.org/10.1073/pnas.2312724121"},
+   {a:"Wertheim-Tysarowska K., Osipowicz K., Woźniak K., Sawicka J., Mika A., Kutkowska-Kaźmierczak A., Gostyński A.",t:"Molecular analysis of inherited disorders of cornification in Polish patients shows novel variants and functional data.",v:"Orphanet Journal of Rare Diseases, 19(1), 413",l:"https://doi.org/10.1186/s13023-024-03395-4"}
+ ]},
+ {y:2023,recent:true,items:[
+   {a:"Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, Siatkowski I., Okoniewski M.",t:"Ambiguous genes due to aligners and their impact on RNA-seq data analysis.",v:"Scientific Reports, 13(1), 21770",l:"https://doi.org/10.1038/s41598-023-41085-6"},
+   {a:"Jakubowska M., Dobosz R., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, Kowalska J., Tratwal A.",t:"Effects of water-based extracts of peppermint and French marigold on the transformation of larvae and nymphs of two-spotted spider mite (Tetranychus urticae Koch).",v:"Journal of Plant Protection Research"},
+   {a:"Gawlik-Dziki U., Wrzesińska-Krupa B., Nowak R., Pietrzak W., <b>Zyprych-Walczak J.</b>, Obrępalska-Stęplowska A.",t:"Herbicide resistance status impacts the profile of non-anthocyanin polyphenolics and some phytomedical properties of edible cornflower (Centaurea cyanus L.) flowers.",v:"Scientific Reports, 13(1), 11538"},
+   {a:"Wertheim-Tysarowska K., Osipowicz K., Gielniewski B., Wojtas B., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, … Jezela-Stanek A.",t:"The Epidermal Transcriptome Analysis of a Novel c.639_642dup LORICRIN Variant — Delineation of the Loricrin Keratoderma Pathology.",v:"Int. J. Mol. Sci., 24(11), 9459",l:"https://doi.org/10.3390/ijms24119459"}
+ ]},
+ {y:2022,recent:true,items:[
+   {a:"Niedziela G., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, Graczyk M.",t:"Application of edgeR and DESeq2 methods in plant experiments based on RNA-seq technology.",v:"Biometrical Letters, 2(59), 127–139"},
+   {a:"Nowacka-Woszuk J., Stachowiak M., Szczerbal I., Szydłowski M., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>, … Świtoński M.",t:"Whole genome sequencing identifies a missense polymorphism in PADI6 associated with testicular/ovotesticular XX disorder of sex development in dogs.",v:"Genomics, 114(4), 110389"},
+   {a:"Sobek Z., Rozanska-Zawieja J., Siatkowski I., Szabelska-Beręsewicz A., <b>Zyprych-Walczak J.</b>",t:"Assessment of the accuracy of selected models used to estimate the heritability coefficient in a cattle population.",v:"Animal Science and Genetics, 18(1)"}
+ ]},
+ {y:2021,recent:true,items:[
+   {a:"Kolanowski T., Wargocka-Matuszewska W., Zimna A., Cheda Ł., <b>Zyprych-Walczak J.</b>, … Kurpisz M.",t:"Multiparametric Evaluation of Post-MI Small Animal Models Using Metabolic ([18F]FDG) and Perfusion-Based (SYN1) Heart Viability Tracers.",v:"Int. J. Mol. Sci., 22(22)"},
+   {a:"Lütge A., <b>Zyprych-Walczak J.</b>, Brykczynska Kunzmann U., Crowell L.H., Calini D., Malhotra D., Soneson Ch., Robinson M.D.",t:"CellMixS: quantifying and visualizing batch effects in single-cell RNA-seq data.",v:"Life Science Alliance, 4(6)"},
+   {a:"Różańska-Zawieja J., Winnicki S., <b>Zyprych-Walczak J.</b>, Szabelska-Beręsewicz A., Siatkowski I., Nowak W., Stefańska B., Kujawiak R., Sobek Z.",t:"The effect of feeding management and culling of cows on the lactation curves and milk production of primiparous dairy cows.",v:"Animals, 11(7), 1959"}
+ ]},
+ {y:2020,recent:true,items:[
+   {a:"Piekarska-Boniecka H., <b>Zyprych-Walczak J.</b>, Siatkowski I., Barczak T.",t:"The effect of vegetation in apple orchard edges on the phenology of parasitoids from the subfamily Pimplinae (Hymenoptera, Ichneumonidae).",v:"Acta Sci. Pol. Hortorum Cultus, 19(5), 129–142"},
+   {a:"Szenajch J., Szabelska-Beręsewicz A., Świercz A., <b>Zyprych-Walczak J.</b>, Siatkowski I., Góralski M., Synowiec A., Handschuh L.",t:"Transcriptome Remodeling in Gradual Development of Inverse Resistance between Paclitaxel and Cisplatin in Ovarian Cancer Cells.",v:"Int. J. Mol. Sci., 21(23), 9218"},
+   {a:"Weigt D., Kiel A., Siatkowski I., <b>Zyprych-Walczak J.</b>, Tomkowiak A., Kwiatek M.",t:"Comparison of the Androgenic Response of Spring and Winter Wheat (Triticum aestivum L.).",v:"Plants, 9, 49"}
+ ]},
+ {y:2019,items:[
+   {a:"Weigt D., Niemann J., Siatkowski I., <b>Zyprych-Walczak J.</b>, Olejnik P., Kurasiak-Popowska D.",t:"Effect of Zearalenone and Hormone Regulators on Microspore Embryogenesis in Anther Culture of Wheat.",v:"Plants, 8(11), 487",if:"2.632"},
+   {a:"Piekarska-Boniecka H., Rzanska-Wieczorek M., Siatkowski I., <b>Zyprych-Walczak J.</b>",t:"Controlling the abundance of the rose tortrix moth (Archips rosana L.) by parasitoids in apple orchards in Wielkopolska, Poland.",v:"Plant Protect. Sci., 55: 265–272",if:"1.464"},
+   {a:"Różańska-Zawieja J., Szabelska-Beręsewicz A., Sobek Z., <b>Zyprych-Walczak J.</b>, Siatkowski I.",t:"Assessment of heritability coefficient variation for various breeds of cattle.",v:"J. Animal & Plant Sciences, 39(1), 6351–6358",if:"0.529"}
+ ]},
+ {y:2018,items:[
+   {a:"Obrępalska-Stęplowska A., Zmienko A., Wrzesińska B., Góralski M., Figlerowicz M., <b>Zyprych-Walczak J.</b>, Siatkowski I., Pospieszny H.",t:"The Defense Response of Nicotiana benthamiana to Peanut Stunt Virus Infection in the Presence of Symptom Exacerbating Satellite RNA.",v:"Viruses, 10(9), 449",if:"3.811"},
+   {a:"Leśniewska A., <b>Zyprych-Walczak J.</b>, Szabelska-Beręsewicz A., Okoniewski M.J.",t:"Genes sharing the protein family domain decrease the performance of classification with RNA-seq genomic signatures.",v:"Biology Direct, 13(1), 3",if:"3.010"},
+   {a:"Piekarska-Boniecka H., <b>Zyprych-Walczak J.</b>, Rzanska-Wieczorek M., Tran Dinh D., Siatkowski I.",t:"The number and abundance of Ichneumonidae (Hymenoptera, Apocrita) subfamilies occurring in apple orchards and on their edges.",v:"Acta Sci. Pol. Hortorum Cultus, 17(2), 93–103",if:"0.443"},
+   {a:"Piekarska-Boniecka H., <b>Zyprych-Walczak J.</b>, Siatkowski I., Dolańska-Niedbała E., Trzciński P., Rzanska-Wieczorek M., Tran Dinh D.",t:"The Impact of Apple Orchard Edge Plants on Communities of Pimplinae (Hymenoptera, Ichneumonidae).",v:"J. Entomol. Res. Soc., 20(2): 43–59",if:"0.182"},
+   {a:"Siatkowski I., <b>Zyprych-Walczak J.</b>",t:"R w analizie statystycznej dla przyrodników. (monografia)",v:"Wyd. Uniwersytetu Przyrodniczego w Poznaniu. ISBN 978-83-7160-899-5, ss.121"}
+ ]},
+ {y:2017,items:[
+   {a:"Beręsewicz M., Alvarez A., Biecek P., Dyderski M.K., Kosiński M., Nowosad J., Rotter K., Szabelska-Beręsewicz A., Szymkowiak M., Wawrowski Ł., <b>Zyprych-Walczak J.</b>",t:"Conference Report: European R Users Meeting 2016.",v:"The R Journal, 9(1), 501–504",if:"1.371"},
+   {a:"Piekarska-Boniecka H., Siatkowski I., <b>Zyprych-Walczak J.</b>, Trzciński P., Rzanska-Wieczorek M.",t:"The phenology of occurrence of dominant predatory Syrphidae (Diptera) species in apple orchards and on their edges.",v:"Acta Sci. Pol. Hortorum Cultus, 16(1), 23–38",if:"0.448"},
+   {a:"Różańska-Zawieja J., Szabelska-Beręsewicz A., Sobek Z., Nienartowicz-Zdrojewska A., <b>Zyprych-Walczak J.</b>, Siatkowski I.",t:"Wpływ wielkości grup ojcowskich i stad na optymalną ocenę współczynnika odziedziczalności długości ciąży u bydła.",v:"Roczniki Naukowe PTZ, 13(1), 9–17"}
+ ]},
+ {y:2016,items:[
+   {a:"Szenajch J., Góralski M., Świercz A., Szabelska A., <b>Zyprych-Walczak J.</b>, Synowiec A., Siatkowski I., Handschuh L.",t:"Zmiany w ekspresji szlaków sygnałowych uczestniczące w wykształcaniu nabytej w obecności erytropoetyny oporności na cisplatynę i paklitaksel w komórkach ludzkiego raka jajnika.",v:"BioMed Nowotwory, 66 supl. 2, 50"}
+ ]},
+ {y:2015,items:[
+   {a:"<b>Zyprych-Walczak J.</b>, Szabelska A., Handschuh L., Gorczak K., Klamecka K., Figlerowicz M., Siatkowski I.",t:"The impact of normalization methods on RNA-seq data analysis.",v:"BioMed Research International, vol. 2015",if:"2.134"}
+ ]},
+ {y:2014,items:[
+   {a:"Gorczak K., Klamecka K., Szabelska A., <b>Zyprych-Walczak J.</b>, Siatkowski I.",t:"Graphical methods for differential analysis of RNA-Seq data.",v:"Colloquium Biometricum, 44, 167–181"}
+ ]},
+ {y:2013,items:[
+   {a:"Uszczyńska B., <b>Zyprych-Walczak J.</b>, Handschuh L., Szabelska A., Kazmierczak M., … Figlerowicz M.",t:"Analysis of boutique arrays: A universal method for the selection of the optimal data normalization procedure.",v:"Int. J. Molecular Medicine, 32(3), 668–684",if:"1.880"},
+   {a:"Tomkowiak A., Weigt D., Broda Z., Mikołajczyk S., Szabelska A., <b>Zyprych J.</b>, Siatkowski I.",t:"Analysis of relationship between genetic and phenotypic similarity of alfalfa mutants inflorescences.",v:"Nauka Przyr. Technol., 7(3) #34"}
+ ]},
+ {y:2012,items:[
+   {a:"Szabelska A., <b>Zyprych-Walczak J.</b>, Siatkowski I.",t:"Application of linear mixed models in the selection of genes from microarray experiments with repeated measurements.",v:"Colloquium Biometricum, 42, 103–109"},
+   {a:"Tomkowiak A., Weigt D., Szabelska A., <b>Zyprych J.</b>, Broda Z., Siatkowski I.",t:"Analiza zróżnicowania genetycznego odmian i klonów koniczyny białej (Trifolium repens L.) z użyciem markerów RAPD.",v:"Nauka Przyr. Technol., 6(4), art. 79"}
+ ]},
+ {y:2011,items:[
+   {a:"Okoniewski M.J., Leśniewska A., Szabelska A., <b>Zyprych-Walczak J.</b>, Ryan M., Wachtel M., Morzy T., Schaeffer B., Schlapbach R.",t:"Preferred analysis methods for single genomic regions in RNA sequencing revealed by processing the shape of coverage.",v:"Nucleic Acids Research",if:"8.055",l:"https://doi.org/10.1093/nar/gkr1249"},
+   {a:"Schmidt M., Handschuh L., <b>Zyprych J.</b>, Szabelska A., Olejnik-Schmidt A., Siatkowski I., Figlerowicz M.",t:"Impact of DNA microarray data transformation on gene expression analysis — comparison of two normalization methods.",v:"Acta Biochimica Polonica, 58(4), 573–580",if:"1.491"},
+   {a:"<b>Zyprych-Walczak J.</b>, Szabelska A., Siatkowski I.",t:"Application of statistical tests in gene selection problems.",v:"Biometrical Letters, 48(2), 113–121"}
+ ]}
+];
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+/* ---- GRANTS (bez kwot i kierownika) ---- */
+const grants=[
+ {id:"OPUS NCN · 2019/33/B/NZ9/00654",t:"Wykorzystanie analizy transkryptomicznej do identyfikacji genów związanych z występowaniem przepuklin pępkowych świń.",fund:"Narodowe Centrum Nauki",per:"2020–2023"},
+ {id:"NCN · 2018/29/B/NZ9/01065",t:"Identyfikacja markerów genetycznych i epigenetycznych związanych z wnętrostwem psów.",fund:"Narodowe Centrum Nauki",per:"2019–2023"},
+ {id:"NCN · 2017/25/B/NZ5/01231",t:"Modelowanie spermatogenezy człowieka dla potrzeb badania, diagnozy i terapii męskiej niepłodności.",fund:"Narodowe Centrum Nauki",per:"2018–2021"},
+ {id:"NCN · 2016/23/B/NZ9/03424",t:"Kompleksowa charakterystyka regionów kandydujących w genomie psa dla monogenowych zaburzeń rozwoju płci, oparta o NGS i cyfrowy emulsyjny PCR (ddPCR).",fund:"Narodowe Centrum Nauki",per:"2017–2021"},
+ {id:"NCBiR · PBS3/247019",t:"Molekularne obrazowanie (z zastosowaniem nanotechnologii) dla monitorowania implantowanych komórek macierzystych i ich funkcji regeneracyjnych.",fund:"NCBiR · PBS",per:"2015–2020"},
+ {id:"NCBiR · StrategMed 1/233209/12/NCBR/2015",t:"Zastosowanie progenitorów glejowych w leczeniu stwardnienia zanikowego bocznego.",fund:"NCBiR · STRATEGMED",per:"2015–2019"},
+ {id:"NCBiR · STRATEGMED1/233624/5/NCBR/2014",t:"Niskocząsteczkowe modulatory epigenetyczne jako aktywatory pluripotencji komórek dla potrzeb medycyny regeneracyjnej.",fund:"NCBiR · STRATEGMED",per:"2015–2017"},
+ {id:"Projekt statutowy nr 532",t:"Zmiany w kierunkach ekspresji białek i szlaków sygnałowych w komórkach raka jajnika skorelowane z odwrotną opornością na cisplatynę i paklitaksel zaindukowaną w obecności erytropoetyny.",fund:"Wojskowy Instytut Medyczny, Warszawa",per:"2018–2019"}
+];
+
+/* ---- TALKS ---- */
+const talks=[
+ {y:2022,recent:true,items:[
+   {k:"Referat",d:"09.2022",t:"Statistical data analysis in plant experiments based on RNA-seq technology.",v:"LI Międzynarodowe Colloquium Biometryczne, Szamotuły"}
+ ]},
+ {y:2021,recent:true,items:[
+   {k:"Współautor",d:"11.2021",t:"Zaburzenia rozwoju płci samic psa i kota — spojrzenie genetyka.",v:"XXIX Międzynarodowy Kongres Medycyny Weterynaryjnej Małych Zwierząt PSLWMZ, Łódź"},
+   {k:"Współautor",d:"11.2021",t:"Wnętrostwo psów — poszukiwanie predysponujących markerów genetycznych.",v:"XXIX Międzynarodowy Kongres Medycyny Weterynaryjnej Małych Zwierząt PSLWMZ, Łódź"},
+   {k:"Współautor",d:"09.2021",t:"Whole genome sequencing in searching for genetic background of disorders of sex development in French Bulldog, American Stafford Terrier and Yorkshire Terriers dogs.",v:"IX Zjazd Towarzystwa Biologii Rozrodu (online), Poznań"},
+   {k:"Współautor",d:"09.2021",t:"Extensive differences of gene expression profiles between descended and undescended canine testes revealed by whole transcriptome sequencing (RNA-seq).",v:"IX Zjazd Towarzystwa Biologii Rozrodu (online), Poznań"}
+ ]},
+ {y:2018,recent:true,items:[
+   {k:"Referat zaproszony",d:"11.2018",t:"Statistical Analysis of RNA-seq Data — Bringing Results to Scientists.",v:"ICCVS Fall Scientific Symposium 2018, Gdańsk"},
+   {k:"Współautor",d:"07.2018",t:"The difficult genes and their impact on RNA-seq data analysis.",v:"29th International Biometric Conference — IBC2018, Barcelona"},
+   {k:"Poster",d:"08.2018",t:"Effect of gene-gene correlation in RNA-seq data analysis.",v:"LinStat'2018, Będlewo k. Poznania"},
+   {k:"Współautor",d:"08.2018",t:"Statistical methods for genes selection based on RNA-seq coverage profiles.",v:"LinStat'2018, Będlewo k. Poznania"},
+   {k:"Współautor",d:"09.2018",t:"The effect of zearalenone on the anther culture of wheat.",v:"XV Overall Polish in vitro Culture and Plant Biotechnology Conference, Rogów"},
+   {k:"Współautor",d:"03.2018",t:"Ocena wydajności stada na podstawie częściowych laktacji.",v:"XXVI Szkoła Zimowa Hodowców Bydła, Zakopane"}
+ ]},
+ {y:2017,recent:true,items:[
+   {k:"Referat zaproszony",d:"08.2017",t:"Statistical analysis for RNA-seq data: bringing results to scientists.",v:"CEN ISBS 2017, Wiedeń"},
+   {k:"Poster",d:"09.2017",t:"Implementation of testing the parallelism for four-parameter logistic model in R.",v:"47th International Biometrical Colloquium, Kiry"},
+   {k:"Współautor",d:"07.2017",t:"Analysis of CAMDA RNA-seq data with the knowledge of protein domains in genes.",v:"16th CAMDA 2017, Praga"}
+ ]},
+ {y:2016,items:[
+   {k:"Referat zaproszony",d:"11.2016",t:"Discussion of a biologist with a statistician working with R — how to find useful information in the vastness of biological data.",v:"RBioMeSs, Warszawa"},
+   {k:"Organizator",d:"10.2016",t:"European R Users Meeting — eRum 2016.",v:"Poznań"},
+   {k:"Współautor",d:"10.2016",t:"Zmiany w ekspresji szlaków sygnałowych w komórkach ludzkiego raka jajnika.",v:"IV Kongres Onkologii Polskiej, Łódź"},
+   {k:"Współautor",d:"09.2016",t:"Accuracy of the selected linear models applied for estimation of the heritability coefficient in the dairy cattle population.",v:"LXXXI Zjazd Naukowy PTZ, Warszawa"},
+   {k:"Poster",d:"09.2016",t:"Statistical methods for survival data analysis.",v:"46th International Biometrical Colloquium, Lublin"},
+   {k:"Poster",d:"06.2016",t:"Influence of the primary analysis on discovering differentially expressed genes based on RNA-Seq data.",v:"BioInformatics in Toruń 2016 — BIT16, Toruń"}
+ ]},
+ {y:2015,items:[
+   {k:"Współautor",d:"09.2015",t:"The comparison of the normalization methods for RNA-Seq data analysis.",v:"45th International Biometrical Colloquium, Dymaczewo"}
+ ]},
+ {y:2014,items:[
+   {k:"Warsztaty",d:"10.2014",t:"Introduction to R.",v:"Polish Academic R Users Meeting — PAZUR 2014, Poznań"},
+   {k:"Współautor",d:"10.2014",t:"Usage of R in the analysis of RNA-seq data.",v:"PAZUR 2014, Poznań"},
+   {k:"Referat",d:"12.2014",t:"Przegląd problemów i metod związanych z analizą danych ekspresji genów na podstawie głębokiego sekwencjonowania.",v:"XL Konferencja Statystyka Matematyczna, Będlewo"},
+   {k:"Współautor",d:"07.2014",t:"RNA-Seq plant data analysis.",v:"X Working Seminar on Statistical Methods in Variety Testing, Będlewo"},
+   {k:"Referat",d:"06.2014",t:"Rozmowa statystyka z genetykiem — jak za pomocą wizualizacji przekazać wyniki badań.",v:"PAZUR VIII, Poznań"},
+   {k:"Referat",d:"05.2014",t:"Statistical analysis of data coming from microarray and next generation sequencing experiments.",v:"Open lectures in statistics, UAM Poznań"}
+ ]},
+ {y:2013,items:[
+   {k:"Referat zaproszony",d:"11.2013",t:"Microarrays vs RNA-seq — novel approaches for searching interesting genes.",v:"Seminar of the Bioinformatics Group, BOKU University, Wiedeń"}
+ ]},
+ {y:2012,items:[
+   {k:"Referat",d:"04.2012",t:"Metody selekcji genów uwzględniające korelacje pomiędzy genami.",v:"Congress of Polish Statistics, Poznań"}
+ ]},
+ {y:2011,items:[
+   {k:"Współautor",d:"12.2011",t:"Measures of dissimilarity of the coverage functions.",v:"European Bioconductor Developers' Meeting 2011, Manchester"},
+   {k:"Współautor",d:"09.2011",t:"Wykorzystanie liniowego modelu mieszanego w problemie selekcji genów.",v:"XLI International Biometricum Colloquium, Lublin"}
+ ]},
+ {y:2010,items:[
+   {k:"Postery",d:"09.2010",t:"Gene's selection based on statistical tests · Overview of growth models in R · Morphological analysis of inflorescence mutants in alfalfa · Analiza zróżnicowania genetycznego klonów koniczyny białej.",v:"XL International Biometrical Colloquium & 2nd Polish-Portuguese Workshop on Biometry, Będlewo"}
+ ]},
+ {y:2009,items:[
+   {k:"Referat",d:"10.2009",t:"Problems encountered during microarray data analysis.",v:"Wrocławski Zlot Użytkowników R — WZUR 2.0"},
+   {k:"Współautor",d:"12.2009",t:"Wybrane testy statystyczne w selekcji genów.",v:"Statystyka Matematyczna, Wisła"}
+ ]}
+];
+
+/* ---- RENDER ---- */
+function pubHTML(g){
+ const its=g.items.map(p=>`<div class="pub">${p.a} (${g.y}). <b>${p.t}</b>${p.if?`<span class="if">IF ${p.if}</span>`:""}<span class="venue">${p.v}</span>${p.l?` <a class="lnk" href="${p.l}" target="_blank">↗ DOI</a>`:""}</div>`).join("");
+ return `<div class="year-block${g.recent?"":" pub-x hidden"}"><div class="yr">${g.y}</div><div class="items">${its}</div></div>`;
 }
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+function talkHTML(g){
+ const its=g.items.map(p=>`<div class="pub"><span class="kind">${p.k}</span> <span class="date">${p.d}</span><br><b>${p.t}</b><span class="venue">${p.v}</span></div>`).join("");
+ return `<div class="year-block${g.recent?"":" talk-x hidden"}"><div class="yr">${g.y}</div><div class="items">${its}</div></div>`;
+}
+function grantHTML(g){
+ return `<div class="grant"><span class="gid">${g.id}</span><div class="gtitle">${g.t}</div>
+   <div class="gmeta"><span>🏷️ Rola: <b>Wykonawca</b></span><span>🏛️ ${g.fund}</span><span>📅 ${g.per}</span></div></div>`;
+}
+document.getElementById("pub-list").innerHTML=pubs.map(pubHTML).join("");
+document.getElementById("talk-list").innerHTML=talks.map(talkHTML).join("");
+document.getElementById("grant-list").innerHTML=grants.map(grantHTML).join("");
 
+function toggler(btnId,cls,more,less){
+ const btn=document.getElementById(btnId);let open=false;
+ btn.addEventListener("click",()=>{open=!open;
+   document.querySelectorAll("."+cls).forEach(e=>e.classList.toggle("hidden",!open));
+   btn.textContent=open?less:more;});
+}
+toggler("pub-more","pub-x","Pokaż wcześniejsze publikacje","Pokaż mniej");
+toggler("talk-more","talk-x","Pokaż wcześniejsze wystąpienia","Pokaż mniej");
 
+/* ---- THEME ---- */
+const root=document.documentElement,tbtn=document.getElementById("theme");
+let dark=window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches;
+function applyTheme(){root.setAttribute("data-theme",dark?"dark":"light");tbtn.textContent=dark?"☀":"◐";}
+applyTheme();
+tbtn.addEventListener("click",()=>{dark=!dark;applyTheme();});
+
+/* ---- MOBILE MENU ---- */
+const burger=document.getElementById("burger"),links=document.getElementById("links");
+burger.addEventListener("click",()=>links.classList.toggle("open"));
+links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>links.classList.remove("open")));
+
+/* ---- REVEAL + ACTIVE NAV ---- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+const navLinks=[...links.querySelectorAll("a")];
+const secs=navLinks.map(a=>document.querySelector(a.getAttribute("href")));
+const spy=new IntersectionObserver(es=>es.forEach(e=>{
+ if(e.isIntersecting)navLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id));
+}),{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(s=>s&&spy.observe(s));
+document.getElementById("yr").textContent=new Date().getFullYear();
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
 </body>
 </html>
